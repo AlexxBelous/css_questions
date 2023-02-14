@@ -1,1 +1,20 @@
-/* Happy Learning */
+.parent {
+    height: 300px;
+    border: 1px solid red;
+    display: flex;
+}
+
+.child {
+    flex-basis: 50px;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    border: 1px solid blue;
+}
+
+.child-element {
+
+}
+
+/* 1-flex-basis. Высота или ширина в зависимости от направления оси */
+/* 2-flex-grow. Позитивное значение может тянет элементы на всю ширину родителя */
