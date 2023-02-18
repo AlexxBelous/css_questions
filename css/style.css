@@ -1,20 +1,26 @@
 .parent {
-    height: 300px;
+    width: 1000px;
+    margin: 50px auto;
+    height: 500px;
     border: 1px solid red;
     display: flex;
+
 }
 
 .child {
-    flex-basis: 50px;
-    text-align: center;
     width: 100px;
+    text-align: center;
     height: 100px;
     border: 1px solid blue;
 }
 
-.child-element {
 
-}
 
-/* 1-flex-basis. Высота или ширина в зависимости от направления оси */
-/* 2-flex-grow. Позитивное значение может тянет элементы на всю ширину родителя */
+
+/*
+
+С помощью flex-grow рассчитывай так, чтобы 4-й child-элемент был 
+шириной в 250px
+
+
+
