@@ -1,6 +1,9 @@
 .parent {
     margin: 50px auto;
     border: 1px solid red;
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
 
 }
 
@@ -10,20 +13,18 @@
 }
 
 .nav-bar-left {
-   
+    flex: 0 0 25%;
 }
 
 .nav-bar-center {
-    
+    flex: 1 0 400px;
 
 }
 
 .nav-bar-right {
-   
-    
+    flex: 0 0 25%;
 
 }
-
 
 
 
@@ -37,9 +38,31 @@
 чтобы все колонки подстраивались под высоту максимального контента.
 
 
-Инструменты flex-grow, flex-shrink, flex-basis, flex, flex-direction, justify-content: center;.
+Инструменты flex-grow, flex-shrink, flex-basis, flex, flex-direction,justify-content: center;.
 
 */
 
+/* Короткая запись flex с значениями по умолчанию.
+flex: flex-grow:0;   flex-shrink:1;   flex-basis:px,%,rem,em,vw;
+*/
 
+/*
+flex-grow: 0; по умолчанию. Если элемент получает свойство 1, 
+будет забирать все свободное пространство себе, при условии, 
+что другие child-элементы будут иметь flex-grow: 0;.
+
+flex-shrink: 1; по умолчанию. При сжатии браузера имеет право сжиматься.
+
+lex-basis - ширина, которая при flex-direction: column
+будет становиться высотой.
+    
+*/
+
+
+/*  ОБЩАЯ ИНФОРМАЦИЯ 
+
+flex-basis, flex-shrink и flex-grow свойства 
+которые используются только для child-элементов.
+
+*/
 
