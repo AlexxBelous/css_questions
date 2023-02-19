@@ -51,19 +51,25 @@
 
 /* 
 Расположите на экране элементы так же как
-на Image-2.
-Минимальная ширина каждого элемента - 25%
+на mage-4. Расстояние между child-элементами
+должно быть 10px так же как и от child-элементов и границ flex-container.
+Минимальная ширина каждого элемента - должна
+быть 33.33% без учета отступов.
 
 */
+
 
 
 /* Custom styles */
 .flex-container {
   display: flex;
   flex-wrap: wrap;
-  min-height: 100vh;
+  height: 100vh;
+  padding: 5px;
+  /* gap: 15px */
 }
 
 .flex-item {
-  min-width: 25%;
+  width: calc(33.33% - 10px);
+  margin: 5px;
 }
