@@ -2,7 +2,8 @@
     margin: 50px auto;
     height: 500px;
     border: 1px solid red;
-
+    display: flex;
+    flex-direction: row;
 
 }
 
@@ -12,7 +13,19 @@
     border: 1px solid blue;
 }
 
+.child-left-bar {
+    flex: 0 0 200px;
+}
 
+.child-center-content {
+    flex: 1;
+
+}
+
+.child-right-bar {
+    flex: 0 0 200px;
+
+}
 
 
 
@@ -29,5 +42,33 @@
 
 
 
+/* Короткая запись flex с значениями по умолчанию.
+flex: flex-grow:0;   flex-shrink:1;   flex-basis:px,%rem,em,vw;
+*/
 
+
+/*
+
+flex-grow: 1; для child-center-content, что означает забирает 
+все свободное пространство себе.
+
+flex-shrink по умолчанию имеет 1.
+Если не указано, как в случаи того же child-center-content, то 
+элемент при сжатии браузера имеет право сжиматься.
+
+child-right-bar и child-left-bar элементы, которые не
+имеют право на рост и на сжатия. flex-basis имеет только 
+ширину в 200px. Если установить для родительского 
+элемента flex-direction: column;, то ширина
+элементов станет высотой.
+    
+*/
+
+
+/*  ОБЩАЯ ИНФОРМАЦИЯ 
+
+flex-basis, flex-shrink и flex-grow свойства 
+которые используются только для child-элементов.
+
+*/
 
