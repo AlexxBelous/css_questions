@@ -1,74 +1,45 @@
 .parent {
     margin: 50px auto;
-    height: 500px;
     border: 1px solid red;
-    display: flex;
-    flex-direction: row;
 
 }
 
-.child {
+.nav-bar {
     text-align: center;
-    height: 50px;
     border: 1px solid blue;
 }
 
-.child-left-bar {
-    flex: 0 0 200px;
+.nav-bar-left {
+   
 }
 
-.child-center-content {
-    flex: 1;
+.nav-bar-center {
+    
 
 }
 
-.child-right-bar {
-    flex: 0 0 200px;
+.nav-bar-right {
+   
+    
 
 }
+
 
 
 
 /*
 
 Необходимо сделать так, чтобы левая и правая 
-часть макеты, была фиксированного размера и имела 
-200px а центральная часть изменялась в ширине 
-при сжатии или растягивании браузера.
-
-Инструменты flex-grow, flex-shrink, flex-basis, flex, flex-direction.
-
-*/
+колонки макета, имели 25% размера от своего родителя.
+Центральная колонка забирала все свободное пространство, родителя себе.
+но при сжатии браузера не сжималась больше чем до ширины 400px.
+При наполнении контента в какой-либо колонке, необходимо сделать так, 
+чтобы все колонки подстраивались под высоту максимального контента.
 
 
-
-/* Короткая запись flex с значениями по умолчанию.
-flex: flex-grow:0;   flex-shrink:1;   flex-basis:px,%rem,em,vw;
-*/
-
-
-/*
-
-flex-grow: 1; для child-center-content, что означает забирает 
-все свободное пространство себе.
-
-flex-shrink по умолчанию имеет 1.
-Если не указано, как в случаи того же child-center-content, то 
-элемент при сжатии браузера имеет право сжиматься.
-
-child-right-bar и child-left-bar элементы, которые не
-имеют право на рост и на сжатия. flex-basis имеет только 
-ширину в 200px. Если установить для родительского 
-элемента flex-direction: column;, то ширина
-элементов станет высотой.
-    
-*/
-
-
-/*  ОБЩАЯ ИНФОРМАЦИЯ 
-
-flex-basis, flex-shrink и flex-grow свойства 
-которые используются только для child-элементов.
+Инструменты flex-grow, flex-shrink, flex-basis, flex, flex-direction, justify-content: center;.
 
 */
+
+
 
