@@ -58,7 +58,7 @@
 в контейнере, должны смещаться
 на новые ряды.
 
-Image-1
+Image-2
 
 */
 
@@ -66,9 +66,6 @@ Image-1
 /* Custom styles */
 .flex-container {
   display: flex;
-  flex-wrap: wrap;
+
 }
 
-.flex-item {
-    width: 200px;
-}
