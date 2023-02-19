@@ -52,7 +52,7 @@
 /* 
 Расположите на экране элементы так же как
 на Image-2.
-Минимальная ширина каждого элемента - 25%.
+Минимальная ширина каждого элемента - 25%
 
 */
 
@@ -60,6 +60,10 @@
 /* Custom styles */
 .flex-container {
   display: flex;
-
+  flex-wrap: wrap;
+  min-height: 100vh;
 }
 
+.flex-item {
+  min-width: 25%;
+}
