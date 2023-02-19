@@ -66,6 +66,9 @@ Image-1
 /* Custom styles */
 .flex-container {
   display: flex;
+  flex-wrap: wrap;
 }
 
-
+.flex-item {
+    width: 200px;
+}
